@@ -129,7 +129,12 @@
     $(function(){
       $.get('data/terkini.json', function(obj){
         var str = '<table border = 1 class = "table table-striped table-bordered">';
-        str+="<tr><td>No</td><td>Judul Headline</td><td>Kategori</td><td>Waktu Publish</td><td>Waktu Scraping</td></tr>";
+        str+= "<tr>" +
+              "<td>No</td>"+
+              "<td>Judul Headline</td>"+
+              "<td>Kategori</td><td>Waktu Publish</td>"+
+              "<td>Waktu Scraping</td></tr>";
+              
         $.each(obj, function(n,data){
             str+="<tr><td>" +(n + 1)+"</td>";
             str+="<td>" +data.judul+"</td>";
