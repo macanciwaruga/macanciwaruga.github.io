@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Data Scraping</title>
+  <title>Data Scraping Selenium</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -60,8 +60,8 @@
 						<li><a href="profile/syahda/index.html">Syahda</a></li>
 				</ul>
 			  </li>
-          <li><a class="nav-link active" href="DataScraping.html">Scraping</a></li>
-          <li><a class="nav-link" href="DataScraping2.html">Scraping II</a></li>
+          <li><a class="nav-link" href="DataScraping.html">Scraping</a></li>
+          <li><a class="nav-link active" href="DataScraping2.html">Scraping II</a></li>
           <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -79,7 +79,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Data Scraping</h2>
+          <h2>Data Scraping Selenium</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Data Scraping</li>
@@ -129,20 +129,21 @@
   <script src="assets/js/main.js"></script>
   <script type="text/javascript">
     $(function(){
-      $.get('data/terkini.json', function(obj){
+      $.get('data/TopNetWorth.json', function(obj){
         var str = '<table border = 1 class = "table table-striped table-bordered">';
         str+= "<tr>" +
-              "<td>No</td>"+
-              "<td>Judul Headline</td>"+
-              "<td>Kategori</td><td>Waktu Publish</td>"+
+              "<td>Rank</td>"+
+              "<td>Foto</td>"+
+              "<td>Nama</td>"+
+              "<td>Net Worth</td>"+
               "<td>Waktu Scraping</td></tr>";
               
         $.each(obj, function(n,data){
-            str+="<tr><td>" +(n + 1)+"</td>";
-            str+="<td>" +data.judul+"</td>";
-            str+="<td>" +data.kategori+"</td>";
-            str+="<td>" +data.waktu_publish+"</td>";
-            str+="<td>" +String(data.waktu_scrapping)+"</td></tr>";
+            str+="<tr><td>" +data.Rank+"</td>";
+            str+="<td> <img src = '" +data.Image+"'/></td>";
+            str+="<td>" +data.Name+"</td>";
+            str+="<td>" +data['Net Worth']+"</td>";
+            str+="<td>" +data['Waktu Scraping']+"</td></tr>";
         });
         $('#data').html(str);
       });
