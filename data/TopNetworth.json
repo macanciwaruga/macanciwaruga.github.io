@@ -1,0 +1,702 @@
+[
+      {
+            "Rank": "#1",
+            "Name": "Jeff Bezos",
+            "Net Worth": "$199.5 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/10/bezos-1-e1531776508374.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:27"
+      },
+      {
+            "Rank": "#2",
+            "Name": "Elon Musk",
+            "Net Worth": "$190 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/06/Elon-Musk.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:27"
+      },
+      {
+            "Rank": "#3",
+            "Name": "Bernard Arnault",
+            "Net Worth": "$150 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Bernard-Arnault-2.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:27"
+      },
+      {
+            "Rank": "#4",
+            "Name": "Bill Gates",
+            "Net Worth": "$144 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Bill-Gates.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:27"
+      },
+      {
+            "Rank": "#5",
+            "Name": "Mark Zuckerberg",
+            "Net Worth": "$118 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/10/Mark-Zuckerberg-1.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:27"
+      },
+      {
+            "Rank": "#6",
+            "Name": "Larry Page",
+            "Net Worth": "$104 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/larry.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:27"
+      },
+      {
+            "Rank": "#7",
+            "Name": "Warren Buffett",
+            "Net Worth": "$101 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Warren-Buffett.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:28"
+      },
+      {
+            "Rank": "#8",
+            "Name": "Sergey Brin",
+            "Net Worth": "$100 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/GettyImages-885129372.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:28"
+      },
+      {
+            "Rank": "#9",
+            "Name": "Steve Ballmer",
+            "Net Worth": "$91 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Steve-Ballmer-e1591728533953.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:28"
+      },
+      {
+            "Rank": "#10",
+            "Name": "Larry Ellison",
+            "Net Worth": "$89 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Larry-Ellison.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:28"
+      },
+      {
+            "Rank": "#11",
+            "Name": "Fran\u00e7oise Bettencourt-Meyers",
+            "Net Worth": "$80 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2017/10/ffb.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:28"
+      },
+      {
+            "Rank": "#12",
+            "Name": "Mukesh Ambani",
+            "Net Worth": "$75 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Mukesh-Ambani-e1562257538371.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:28"
+      },
+      {
+            "Rank": "#13",
+            "Name": "Amancio Ortega Gaona",
+            "Net Worth": "$70 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/03/Amancio-Ortega-Gaona.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:28"
+      },
+      {
+            "Rank": "#14",
+            "Name": "Vladimir Putin",
+            "Net Worth": "$70 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/02/Vladimir-Putin.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:29"
+      },
+      {
+            "Rank": "#15",
+            "Name": "Ma Huateng",
+            "Net Worth": "$64 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/06/Pony-Ma-1.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:29"
+      },
+      {
+            "Rank": "#16",
+            "Name": "Julia Flesher Koch",
+            "Net Worth": "$62 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2019/11/julia2.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:29"
+      },
+      {
+            "Rank": "#17",
+            "Name": "Zhong Shanshan",
+            "Net Worth": "$62 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2021/01/zh.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:29"
+      },
+      {
+            "Rank": "#18",
+            "Name": "Charles Koch",
+            "Net Worth": "$62 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/ck2.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:29"
+      },
+      {
+            "Rank": "#19",
+            "Name": "Satoshi Nakamoto",
+            "Net Worth": "$61 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2014/03/sn.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:29"
+      },
+      {
+            "Rank": "#20",
+            "Name": "Rob Walton",
+            "Net Worth": "$60 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/rw.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:29"
+      },
+      {
+            "Rank": "#21",
+            "Name": "Alice Walton",
+            "Net Worth": "$60 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2020/06/AW.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:29"
+      },
+      {
+            "Rank": "#22",
+            "Name": "Jim Walton",
+            "Net Worth": "$60 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Jim-Walton.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:30"
+      },
+      {
+            "Rank": "#23",
+            "Name": "Michael Bloomberg",
+            "Net Worth": "$60 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/bloom-e1575057068378.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:30"
+      },
+      {
+            "Rank": "#24",
+            "Name": "Colin Huang",
+            "Net Worth": "$57 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2020/05/ch.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:30"
+      },
+      {
+            "Rank": "#25",
+            "Name": "Phil Knight",
+            "Net Worth": "$55 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/12/GettyImages-185373921.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:30"
+      },
+      {
+            "Rank": "#26",
+            "Name": "Carlos Slim Helu",
+            "Net Worth": "$52 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/carlos.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:30"
+      },
+      {
+            "Rank": "#27",
+            "Name": "Gautam Adani",
+            "Net Worth": "$50 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2014/06/Gautam-Adani-1-e1572484334342.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:31"
+      },
+      {
+            "Rank": "#28",
+            "Name": "Jack Ma",
+            "Net Worth": "$50 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/07/Jack-Ma.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:31"
+      },
+      {
+            "Rank": "#29",
+            "Name": "Francois Pinault",
+            "Net Worth": "$50 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/03/fb.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:31"
+      },
+      {
+            "Rank": "#30",
+            "Name": "Tadashi Yanai",
+            "Net Worth": "$42 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/01/Tadashi-Yanai-e1605632463402.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:31"
+      },
+      {
+            "Rank": "#31",
+            "Name": "John Mars",
+            "Net Worth": "$42 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/09/John-Mars.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:31"
+      },
+      {
+            "Rank": "#32",
+            "Name": "Jacqueline Mars",
+            "Net Worth": "$42 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/09/GettyImages-884611364.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:32"
+      },
+      {
+            "Rank": "#33",
+            "Name": "Qin Yinglin",
+            "Net Worth": "$40 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2020/07/CNW-Man-5.png",
+            "Waktu Scraping": "27 April 2021 13:49:32"
+      },
+      {
+            "Rank": "#34",
+            "Name": "Dan Gilbert",
+            "Net Worth": "$40 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/10/Dan-Gilbert.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:32"
+      },
+      {
+            "Rank": "#35",
+            "Name": "Li Ka-shing",
+            "Net Worth": "$34 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/kashing-e1606175107232.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:32"
+      },
+      {
+            "Rank": "#36",
+            "Name": "David Thomson",
+            "Net Worth": "$32 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/david.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:32"
+      },
+      {
+            "Rank": "#37",
+            "Name": "Len Blavatnik",
+            "Net Worth": "$32 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/09/GettyImages-463049908.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:32"
+      },
+      {
+            "Rank": "#38",
+            "Name": "Michael Dell",
+            "Net Worth": "$30 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Michael-Dell-1.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:32"
+      },
+      {
+            "Rank": "#39",
+            "Name": "Laurene Powell Jobs",
+            "Net Worth": "$30 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/05/Laurene-Powell-Jobs-1.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:33"
+      },
+      {
+            "Rank": "#40",
+            "Name": "Sultan of Brunei",
+            "Net Worth": "$30 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/11/Sultan-of-Brunei-e1600998270373.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:33"
+      },
+      {
+            "Rank": "#41",
+            "Name": "Maha Vajiralongkorn",
+            "Net Worth": "$30 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2016/11/Maha-Vajiralongkorn.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:33"
+      },
+      {
+            "Rank": "#42",
+            "Name": "Hui Ka Yan",
+            "Net Worth": "$30 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/03/Xu-Jiayin.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:33"
+      },
+      {
+            "Rank": "#43",
+            "Name": "Vladimir Potanin",
+            "Net Worth": "$30 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/GettyImages-51016133-e1584233800309.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:33"
+      },
+      {
+            "Rank": "#44",
+            "Name": "Sheikh Mansour bin Zayed Al Nahyan",
+            "Net Worth": "$30 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2018/04/Sheikh-Mansour.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:34"
+      },
+      {
+            "Rank": "#45",
+            "Name": "Giovanni Ferrero",
+            "Net Worth": "$28 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2015/06/GettyImages-472125500-e1578371087716.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:34"
+      },
+      {
+            "Rank": "#46",
+            "Name": "William Ding",
+            "Net Worth": "$26 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/GettyImages-51406917-e1526845755451.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:34"
+      },
+      {
+            "Rank": "#47",
+            "Name": "Shiv Nadar",
+            "Net Worth": "$25.9 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/03/GettyImages-55314268.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:34"
+      },
+      {
+            "Rank": "#48",
+            "Name": "Eric Yuan",
+            "Net Worth": "$25 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2019/05/Eric-Yuan.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:34"
+      },
+      {
+            "Rank": "#49",
+            "Name": "Gerard Wertheimer",
+            "Net Worth": "$25 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2020/05/gw.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:34"
+      },
+      {
+            "Rank": "#50",
+            "Name": "Stefan Persson",
+            "Net Worth": "$25 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/sp.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:34"
+      },
+      {
+            "Rank": "#51",
+            "Name": "Joseph Safra",
+            "Net Worth": "$25 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/Joseph-Safra.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:34"
+      },
+      {
+            "Rank": "#52",
+            "Name": "  Forrest Mars",
+            "Net Worth": "$24.4 BILLION",
+            "Image": null,
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#53",
+            "Name": "Vladimir Lisin",
+            "Net Worth": "$24 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/02/vl.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#54",
+            "Name": "Takemitsu Takizaki",
+            "Net Worth": "$24 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/03/CNW-Man-7.png",
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#55",
+            "Name": "Leonid Mikhelson",
+            "Net Worth": "$24 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/GettyImages-888661984.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#56",
+            "Name": "Yang Huiyan",
+            "Net Worth": "$24 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/03/CNW-Woman-3.png",
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#57",
+            "Name": "He Xiangjian",
+            "Net Worth": "$24 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/03/CNW-Man-6.png",
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#58",
+            "Name": "Forrest Mars Jr",
+            "Net Worth": "$23.4 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2011/01/mars.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#59",
+            "Name": "Jorge Paulo Lemann",
+            "Net Worth": "$23 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/08/GettyImages-480087442-e1551974594537.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#60",
+            "Name": "Eric Schmidt",
+            "Net Worth": "$23 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/03/Eric-Schmidt.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:35"
+      },
+      {
+            "Rank": "#61",
+            "Name": "Masayoshi Son",
+            "Net Worth": "$22 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/12/Masayoshi-Son.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#62",
+            "Name": "Ken Griffin",
+            "Net Worth": "$22 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/01/kg.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#63",
+            "Name": "James Simons",
+            "Net Worth": "$22 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/08/James-Simons-e1492389262583.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#64",
+            "Name": "Wang Wei",
+            "Net Worth": "$22 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2014/02/GettyImages-83843772.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#65",
+            "Name": "Dieter Schwarz",
+            "Net Worth": "$22 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/07/CNW-Man-5.png",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#66",
+            "Name": "Alain Wertheimer",
+            "Net Worth": "$21 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2015/09/Alain-Wertheimer.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#67",
+            "Name": "Vagit Alekperov",
+            "Net Worth": "$21 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/GettyImages-163288156.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#68",
+            "Name": "Zhang Zhidong",
+            "Net Worth": "$21 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2018/06/CNW-Man-10.png",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#69",
+            "Name": "Leonard Lauder",
+            "Net Worth": "$21 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/06/Leonard-Lauder.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:36"
+      },
+      {
+            "Rank": "#70",
+            "Name": "Sir Evelyn De Rothschild",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/07/sir.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#71",
+            "Name": "Dietrich Mateschitz",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/Dietrich-Mateschitz-1.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#72",
+            "Name": "Rupert Murdoch",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Rupert-Murdoch-e1591467075585.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#73",
+            "Name": "James Dyson",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/08/James-Dyson.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#74",
+            "Name": "Zhong Huijuan",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2020/07/CNW-Woman-1.png",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#75",
+            "Name": "Salman bin Abdulaziz Al Saud",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2015/01/GettyImages-79011061.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#76",
+            "Name": "Prince Alwaleed Bin Talal Alsaud",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/prince.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#77",
+            "Name": "John Menard",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/11/John-Menard.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#78",
+            "Name": "Elaine Marshall",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/08/CNW-Woman-2.png",
+            "Waktu Scraping": "27 April 2021 13:49:37"
+      },
+      {
+            "Rank": "#79",
+            "Name": "Lee Kun-Hee",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/Lee-Kun-Hee.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#80",
+            "Name": "Lee Shau Kee",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/09/CNW-Man.png",
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#81",
+            "Name": "Leonardo Del Vecchio",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2013/03/leo.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#82",
+            "Name": "Alexey Mordashov",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/Alexey-Mordashov.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#83",
+            "Name": "Gennady Timchenko",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/GettyImages-687259598.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#84",
+            "Name": "Carl Icahn",
+            "Net Worth": "$20 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/08/Carl-Icahn.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#85",
+            "Name": "  Theo Albrecht",
+            "Net Worth": "$19.6 BILLION",
+            "Image": null,
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#86",
+            "Name": "Petr Kellner",
+            "Net Worth": "$19 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/11/CNW-Man-1.png",
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#87",
+            "Name": "James Ratcliffe",
+            "Net Worth": "$19 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2014/04/jim.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:38"
+      },
+      {
+            "Rank": "#88",
+            "Name": "Pallonji Mistry",
+            "Net Worth": "$19 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/GettyImages-594746818.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#89",
+            "Name": "Abigail Johnson",
+            "Net Worth": "$19 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2010/09/aj.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#90",
+            "Name": "Susanne Klatten",
+            "Net Worth": "$19 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Susanne-Klatten-e1610573740700.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#91",
+            "Name": "Gina Rinehart",
+            "Net Worth": "$18.7 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2011/07/gina.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#92",
+            "Name": "Stephen Schwarzman",
+            "Net Worth": "$18.4 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/11/Stephen-Schwarzman.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#93",
+            "Name": "Sheikh Khalifa Bin Zayed Al Nahyan",
+            "Net Worth": "$18 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/11/Sheikh-Khalifa-Bin-Zayed-Al-Nahayan.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#94",
+            "Name": "Roman Abramovich",
+            "Net Worth": "$18 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/GettyImages-176743123.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#95",
+            "Name": "David & Simon Reuben",
+            "Net Worth": "$18 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2018/06/CNW-Man-1.png",
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#96",
+            "Name": "  Lukas Walton",
+            "Net Worth": "$18 BILLION",
+            "Image": null,
+            "Waktu Scraping": "27 April 2021 13:49:39"
+      },
+      {
+            "Rank": "#97",
+            "Name": "Lakshmi Mittal",
+            "Net Worth": "$18 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/Lakshmi-Mittal-1.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:40"
+      },
+      {
+            "Rank": "#98",
+            "Name": "Serge Dassault",
+            "Net Worth": "$17.3 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/07/Serge-Dassault.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:40"
+      },
+      {
+            "Rank": "#99",
+            "Name": "Donald Bren",
+            "Net Worth": "$17 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2009/09/bren2.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:40"
+      },
+      {
+            "Rank": "#100",
+            "Name": "Thomas Peterffy",
+            "Net Worth": "$17 BILLION",
+            "Image": "https://vz.cnwimg.com/thumb-200x150/wp-content/uploads/2012/08/Thomas-Peterffy.jpg",
+            "Waktu Scraping": "27 April 2021 13:49:40"
+      }
+]
