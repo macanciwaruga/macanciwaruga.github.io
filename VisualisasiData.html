@@ -13,10 +13,9 @@
     .square {
       text-align: center;
       background-color: #EEEDE7;
-      width: 50px;
       border: 5px #B9B7BD;
-      padding: 50px;
-      margin: 20px;
+      width: 100%;
+      padding: 30px;
     }
   </style>
   <!-- Favicons -->
@@ -103,19 +102,27 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Data Visualization Section ======= -->
-    <section id ="data-resume" class="row">
-    <div class="square">
-	<p><font size="5 px">Total Data</font><br>100</p>
-    </div>
-    <div class="square">
-	<p><font size="5 px">Highest Networth</font><br>$206 Billion</p>
-    </div>
-    <div class="square">
-	<p><font size="5 px">Lowest Networth</font><br>$17 Billion</p>
-    </div>
-    <div class="square">
-	<p><font size="5 px">Average Networth</font><br>$42.2 Billion</p>
-    </div>
+    <section id="data-resume" class="row">
+      <div class="square col-md-3 col-lg-3">
+        <p>
+          <font size="5 px">Total Data</font><br>100
+        </p>
+      </div>
+      <div class="square col-md-3 col-lg-3">
+        <p>
+          <font size="5 px">Highest Networth</font><br>$206 Billion
+        </p>
+      </div>
+      <div class="square col-md-3 col-lg-3">
+        <p>
+          <font size="5 px">Lowest Networth</font><br>$17 Billion
+        </p>
+      </div>
+      <div class="square col-md-3 col-lg-3">
+        <p>
+          <font size="5 px">Average Networth</font><br>$42.2 Billion
+        </p>
+      </div>
     </section>
     <section id="portfolio-details" style="margin : 0px 20px 0px 20px " class="portfolio-details row">
       <div id="pie_chart" class="col-md-6"></div>
@@ -207,134 +214,135 @@
 
   <script type="text/javascript">
 
-      // Load Charts and the corechart package.
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.load('current', {'packages':['bar']});
+    // Load Charts and the corechart package.
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.load('current', { 'packages': ['bar'] });
 
-      google.charts.setOnLoadCallback(drawBarChart);
+    google.charts.setOnLoadCallback(drawBarChart);
 
-      google.charts.setOnLoadCallback(drawColumnChart);
+    google.charts.setOnLoadCallback(drawColumnChart);
 
-      var request = new XMLHttpRequest();
-      request.open("GET", "data/TopNetworth.json", false);
-      request.send(null)
-      var obj = JSON.parse(request.responseText);
+    var request = new XMLHttpRequest();
+    request.open("GET", "data/TopNetworth.json", false);
+    request.send(null)
+    var obj = JSON.parse(request.responseText);
 
-      function drawBarChart() {
-        var data = new google.visualization.arrayToDataTable([
-          ['Celebrities', 'Net Worth'],
-          [obj[0].Name, parseInt(obj[0]['Net Worth'])],
-          [obj[1].Name, parseInt(obj[1]['Net Worth'])],
-          [obj[2].Name, parseInt(obj[2]['Net Worth'])],
-          [obj[3].Name, parseInt(obj[3]['Net Worth'])],
-          [obj[4].Name, parseInt(obj[4]['Net Worth'])],
-          [obj[5].Name, parseInt(obj[5]['Net Worth'])],
-          [obj[6].Name, parseInt(obj[6]['Net Worth'])],
-          [obj[7].Name, parseInt(obj[7]['Net Worth'])],
-          [obj[8].Name, parseInt(obj[8]['Net Worth'])],
-          [obj[9].Name, parseInt(obj[9]['Net Worth'])]
-        ]);
+    function drawBarChart() {
+      var data = new google.visualization.arrayToDataTable([
+        ['Celebrities', 'Net Worth'],
+        [obj[0].Name, parseInt(obj[0]['Net Worth'])],
+        [obj[1].Name, parseInt(obj[1]['Net Worth'])],
+        [obj[2].Name, parseInt(obj[2]['Net Worth'])],
+        [obj[3].Name, parseInt(obj[3]['Net Worth'])],
+        [obj[4].Name, parseInt(obj[4]['Net Worth'])],
+        [obj[5].Name, parseInt(obj[5]['Net Worth'])],
+        [obj[6].Name, parseInt(obj[6]['Net Worth'])],
+        [obj[7].Name, parseInt(obj[7]['Net Worth'])],
+        [obj[8].Name, parseInt(obj[8]['Net Worth'])],
+        [obj[9].Name, parseInt(obj[9]['Net Worth'])]
+      ]);
 
-        var options = {
+      var options = {
+        title: 'Top 10 Celebrities',
+        width: '100%',
+        height: 400,
+        legend: { position: 'none' },
+        chart: {
           title: 'Top 10 Celebrities',
-          width: '100%',
-          height : 400,
-          legend: { position: 'none' },
-          chart: { title: 'Top 10 Celebrities',
-                   subtitle: 'Most Net Worth' },
-          bars: 'horizontal', // Required for Material Bar Charts.
-          axes: {
-            x: {
-              0: { side: 'Person', label: 'Net Worth'} // Top x-axis.
-            }
-          },
-          bar: { groupWidth: "60%" }
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('bar_chart_div'));
-        chart.draw(data, options);
+          subtitle: 'Most Net Worth'
+        },
+        bars: 'horizontal', // Required for Material Bar Charts.
+        axes: {
+          x: {
+            0: { side: 'Person', label: 'Net Worth' } // Top x-axis.
+          }
+        },
+        bar: { groupWidth: "60%" }
       };
 
-      function drawColumnChart() {
+      var chart = new google.charts.Bar(document.getElementById('bar_chart_div'));
+      chart.draw(data, options);
+    };
 
-        var amount = [0,0];
-        
-        for(var i = 0; i < obj.length; i++)
-        {
-          if(obj[i].Gender == "Male")
-            amount[0] +=1
-          else if(obj[i].Gender == "Female")
-            amount[1] += 1
-        }
+    function drawColumnChart() {
 
-        var data = new google.visualization.arrayToDataTable([
-          ['Gender', 'Amount'],
-          ["Male", amount[0]],
-          ["Female", amount[1]]
-        ]);
+      var amount = [0, 0];
 
-        var options = {
-          width: '100%',
-          height: 400,
-          legend: { position: 'none' },
-          chart: {
-            title: 'Gender Count',
-            subtitle: 'Rich people based on their gender' },
-          axes: {
-            x: {
-              0: { side: 'Gender', label: 'Gender'} // Top x-axis.
-            }
-          },
-          bar: { groupWidth: "90%" }
-        };
+      for (var i = 0; i < obj.length; i++) {
+        if (obj[i].Gender == "Male")
+          amount[0] += 1
+        else if (obj[i].Gender == "Female")
+          amount[1] += 1
+      }
 
-        var chart = new google.charts.Bar(document.getElementById('column_chart_div'));
-        // Convert the Classic options to Material options.
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      };
-      
-      google.charts.setOnLoadCallback(drawLineChart);
+      var data = new google.visualization.arrayToDataTable([
+        ['Gender', 'Amount'],
+        ["Male", amount[0]],
+        ["Female", amount[1]]
+      ]);
 
-      function drawLineChart() {
-
-        var count = [0,0,0,0,0];
-
-        for(var i = 0; i < obj.length; i++)
-        {
-          if(obj[i].Age >= 60)
-            count[0] += 1;
-          else if(obj[i].Age >= 50 && obj[i].Age < 60)
-            count[1] += 1;
-          else if(obj[i].Age >= 40 && obj[i].Age < 50)
-            count[2] += 1;
-          else if(obj[i].Age >= 30 && obj[i].Age < 40)
-            count[3] += 1;
-          else if(obj[i].Age < 30)
-            count[4] += 1;
-        }
-
-        var data = google.visualization.arrayToDataTable([
-          ['Criteria', 'Age'],
-          ['< 30',  count[4]],
-          ['> 30',  count[3]],
-          ['> 40',  count[2]],
-          ['> 50',  count[1]],
-          ['> 60',  count[0]],
-        ]);
-
-        var options = {
-          title: 'Age in Criteria',
-          width: 600,
-          height: 400,
-          curveType: 'function',
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart_div'));
-
-        chart.draw(data, options);
+      var options = {
+        width: '100%',
+        height: 400,
+        legend: { position: 'none' },
+        chart: {
+          title: 'Gender Count',
+          subtitle: 'Rich people based on their gender'
+        },
+        axes: {
+          x: {
+            0: { side: 'Gender', label: 'Gender' } // Top x-axis.
+          }
+        },
+        bar: { groupWidth: "90%" }
       };
 
-    </script>
+      var chart = new google.charts.Bar(document.getElementById('column_chart_div'));
+      // Convert the Classic options to Material options.
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    };
+
+    google.charts.setOnLoadCallback(drawLineChart);
+
+    function drawLineChart() {
+
+      var count = [0, 0, 0, 0, 0];
+
+      for (var i = 0; i < obj.length; i++) {
+        if (obj[i].Age >= 60)
+          count[0] += 1;
+        else if (obj[i].Age >= 50 && obj[i].Age < 60)
+          count[1] += 1;
+        else if (obj[i].Age >= 40 && obj[i].Age < 50)
+          count[2] += 1;
+        else if (obj[i].Age >= 30 && obj[i].Age < 40)
+          count[3] += 1;
+        else if (obj[i].Age < 30)
+          count[4] += 1;
+      }
+
+      var data = google.visualization.arrayToDataTable([
+        ['Criteria', 'Age'],
+        ['< 30', count[4]],
+        ['> 30', count[3]],
+        ['> 40', count[2]],
+        ['> 50', count[1]],
+        ['> 60', count[0]],
+      ]);
+
+      var options = {
+        title: 'Age in Criteria',
+        width: 600,
+        height: 400,
+        curveType: 'function',
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart_div'));
+
+      chart.draw(data, options);
+    };
+
+  </script>
 
 </body>
 
