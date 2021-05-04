@@ -9,21 +9,23 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-	square {
-  background-color: #EEEDE7;
-  width: 50px;
-  border: 5px #B9B7BD;
-  padding: 50px;
-  margin: 20px;
-	}
-	</style>
+  <style>
+    square {
+      background-color: #EEEDE7;
+      width: 50px;
+      border: 5px #B9B7BD;
+      padding: 50px;
+      margin: 20px;
+    }
+  </style>
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -59,19 +61,19 @@
           <li><a class="nav-link scrollto " href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html">About</a></li>
           <li><a class="nav-link scrollto" href="index.html">Team</a></li>
-			  <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
-				<ul>
-				  <li><a href="profile/dimas/index.html">Dimas</a></li>
-				  <li><a href="profile/fauzi/index.html">Fauzi</a></li>
-						<li><a href="profile/Gefi/index.html">Gefi</a></li>
-				  <li><a href="profile/Rafli/index.html">Rafli</a></li>
-				  <li><a href="profile/reihan2/index.html">Reihan</a></li>
-						<li><a href="profile/syahda/index.html">Syahda</a></li>
-				</ul>
-			  </li>
+          <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="profile/dimas/index.html">Dimas</a></li>
+              <li><a href="profile/fauzi/index.html">Fauzi</a></li>
+              <li><a href="profile/Gefi/index.html">Gefi</a></li>
+              <li><a href="profile/Rafli/index.html">Rafli</a></li>
+              <li><a href="profile/reihan2/index.html">Reihan</a></li>
+              <li><a href="profile/syahda/index.html">Syahda</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link" href="DataScraping.html">Scraping</a></li>
           <li><a class="nav-link" href="DataScraping2.html">Scraping II</a></li>
-		  <li><a class="nav-link active" href="VisualisasiData.html">Visualisasi Data</a></li>
+          <li><a class="nav-link active" href="VisualisasiData.html">Visualisasi Data</a></li>
           <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -95,16 +97,17 @@
             <li>Visualisasi Data</li>
           </ol>
         </div>
-	
+
       </div>
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Data Visualization Section ======= -->
-    <div>
-	<square id ="Total Data"><font size="10 px">Total Data</font>                 100</square> 
-    </div>
-    <section id="portfolio-details" style="margin : 0px 20px 0px 20px " class="portfolio-details">
-      <div id="data"></div>
+    <section id="portfolio-details" style="margin : 0px 20px 0px 20px " class="portfolio-details row">
+      <div id="pie_chart" class="col-md-6"></div>
+      <div id="bar_chart_div" class="col-md-6"></div>
+      <div id="column_chart_div" class="col-md-6"></div>
+      <div id="curve_chart_div" class="col-md-6"></div>
+      </div>
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
@@ -117,18 +120,19 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-          &copy; Copyright <strong><span>2021</span></strong>. All Rights Reserved.
+        &copy; Copyright <strong><span>2021</span></strong>. All Rights Reserved.
         Designed by <a href="https://macanciwaruga.github.io/">MacanCiwaruga</a>
-     <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -140,28 +144,182 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript">
-    $(function(){
-      $.get('data/TopNetworth.json', function(obj){
-        var str = '<table border = 1 class = "table table-striped table-bordered">';
-        str+= "<tr>" +
-              "<td>Rank</td>"+
-              "<td>Foto</td>"+
-              "<td>Nama</td>"+
-              "<td>Net Worth</td>"+
-              "<td>Waktu Scraping</td></tr>";
-              
-        $.each(obj, function(n,data){
-            str+="<tr><td>" +data.Rank+"</td>";
-            str+="<td> <img src = '" +data.Image+"'/></td>";
-            str+="<td>" +data.Name+"</td>";
-            str+="<td>" +data['Net Worth']+"</td>";
-            str+="<td>" +data['Waktu Scraping']+"</td></tr>";
-        });
-        $('#data').html(str);
-      });
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script>
+    var request = new XMLHttpRequest();
+    request.open("GET", "data/TopNetworth.json", false);
+    request.send(null)
+
+    var byCountryMap = {}
+    var obj = JSON.parse(request.responseText);
+    obj.forEach(function (value) {
+      if (byCountryMap[value.Nationality] == undefined) {
+        byCountryMap[value.Nationality] = 1;
+      } else {
+        byCountryMap[value.Nationality]++;
+      }
     });
+
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Nationality');
+      data.addColumn('number', 'Total');
+
+      console.log(typeof byCountryMap);
+      data.addRows(Object.entries(byCountryMap));
+
+      var options = {
+        'title': 'Wealthiest man by their nationality',
+        'titleTextStyle': {
+          fontSize: 15
+        },
+        'width': '100%',
+        'height': 400,
+        'tooltip': {
+          'trigger': 'selection'
+        }
+      };
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+      chart.draw(data, options);
+    }
   </script>
+
+  <script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.load('current', {'packages':['bar']});
+
+      google.charts.setOnLoadCallback(drawBarChart);
+
+      google.charts.setOnLoadCallback(drawColumnChart);
+
+      var request = new XMLHttpRequest();
+      request.open("GET", "data/TopNetworth.json", false);
+      request.send(null)
+      var obj = JSON.parse(request.responseText);
+
+      function drawBarChart() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Celebrities', 'Net Worth'],
+          [obj[0].Name, parseInt(obj[0]['Net Worth'])],
+          [obj[1].Name, parseInt(obj[1]['Net Worth'])],
+          [obj[2].Name, parseInt(obj[2]['Net Worth'])],
+          [obj[3].Name, parseInt(obj[3]['Net Worth'])],
+          [obj[4].Name, parseInt(obj[4]['Net Worth'])],
+          [obj[5].Name, parseInt(obj[5]['Net Worth'])],
+          [obj[6].Name, parseInt(obj[6]['Net Worth'])],
+          [obj[7].Name, parseInt(obj[7]['Net Worth'])],
+          [obj[8].Name, parseInt(obj[8]['Net Worth'])],
+          [obj[9].Name, parseInt(obj[9]['Net Worth'])]
+        ]);
+
+        var options = {
+          title: 'Top 10 Celebrities',
+          width: '100%',
+          height : 400,
+          legend: { position: 'none' },
+          chart: { title: 'Top 10 Celebrities',
+                   subtitle: 'Most Net Worth' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          axes: {
+            x: {
+              0: { side: 'Person', label: 'Net Worth'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "60%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('bar_chart_div'));
+        chart.draw(data, options);
+      };
+
+      function drawColumnChart() {
+
+        var amount = [0,0];
+        
+        for(var i = 0; i < obj.length; i++)
+        {
+          if(obj[i].Gender == "Male")
+            amount[0] +=1
+          else if(obj[i].Gender == "Female")
+            amount[1] += 1
+        }
+
+        var data = new google.visualization.arrayToDataTable([
+          ['Gender', 'Amount'],
+          ["Male", amount[0]],
+          ["Female", amount[1]]
+        ]);
+
+        var options = {
+          width: '100%',
+          height: 400,
+          legend: { position: 'none' },
+          chart: {
+            title: 'Gender Count',
+            subtitle: 'Rich people based on their gender' },
+          axes: {
+            x: {
+              0: { side: 'Gender', label: 'Gender'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('column_chart_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+      
+      google.charts.setOnLoadCallback(drawLineChart);
+
+      function drawLineChart() {
+
+        var count = [0,0,0,0,0];
+
+        for(var i = 0; i < obj.length; i++)
+        {
+          if(obj[i].Age >= 60)
+            count[0] += 1;
+          else if(obj[i].Age >= 50 && obj[i].Age < 60)
+            count[1] += 1;
+          else if(obj[i].Age >= 40 && obj[i].Age < 50)
+            count[2] += 1;
+          else if(obj[i].Age >= 30 && obj[i].Age < 40)
+            count[3] += 1;
+          else if(obj[i].Age < 30)
+            count[4] += 1;
+        }
+
+        var data = google.visualization.arrayToDataTable([
+          ['Criteria', 'Age'],
+          ['< 30',  count[4]],
+          ['> 30',  count[3]],
+          ['> 40',  count[2]],
+          ['> 50',  count[1]],
+          ['> 60',  count[0]],
+        ]);
+
+        var options = {
+          title: 'Age in Criteria',
+          width: 600,
+          height: 400,
+          curveType: 'function',
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart_div'));
+
+        chart.draw(data, options);
+      };
+
+    </script>
 
 </body>
 

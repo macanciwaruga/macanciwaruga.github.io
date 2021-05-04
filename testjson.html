@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<p id="demo"></p>
+<div id="pie_chart"></div>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    var request = new XMLHttpRequest();
+    request.open("GET", "data/TopNetworth.json", false);
+    request.send(null)
+
+    var byCountryMap = {}
+    var obj = JSON.parse(request.responseText);
+    obj.forEach(function(value){
+        if(byCountryMap[value.Nationality] == undefined){
+            byCountryMap[value.Nationality] = 1;
+        } else {
+            byCountryMap[value.Nationality]++;
+        }
+    });
+
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    function drawChart(){
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Nationality');
+        data.addColumn('number', 'Total');
+
+        console.log(typeof byCountryMap);
+        data.addRows(Object.entries(byCountryMap));
+
+        var options = {'title':'Contry',
+                       'titleTextStyle':{
+                        fontSize: 15
+                        },
+                        'width':500,
+                        'height':300,
+                        'tooltip':{
+                            'trigger':'selection'
+                        }};
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+    chart.draw(data, options);
+    }
+
+</script>
+
+</body>
+</html>
