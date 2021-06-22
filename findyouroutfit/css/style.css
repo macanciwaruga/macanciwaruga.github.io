@@ -131,6 +131,7 @@ header .navbar-default .navbar-header {
 	padding: 21px 15px;
 	font-size: 18px;
 	line-height: 20px;
+	align-items: center;
 	height: 66px;
 	border-right: 1px solid #e8e8e8;
 }
