@@ -25,6 +25,17 @@
    </head>
 
    <body>
+	<script>
+	function DropList(parameter){
+	var checkList = document.getElementById(parameter);
+checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+  if (checkList.classList.contains('visible'))
+    checkList.classList.remove('visible');
+  else
+    checkList.classList.add('visible');
+}
+	}
+	</script>
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -89,13 +100,42 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
-                                <h2>Find Your Outfit</h2>
+                                <h2 style="color:#ff246c;">Find Your Outfit</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+		<form action="#" class="search-box">
+            <div class="input-form-row" >
+                <input type="text" placeholder="Outfit Keyword" style=
+					"	height:70px;
+						width:100%;
+						color:#777777;
+						font-size:18px;
+						font-weight:400;
+						padding:9px 33px 9px 32px;
+						border:none;
+						border-radius:0px;
+						margin:0px;
+						position:relative"
+						>
+		    </div>
+			<div class="input-form-row">
+				<input type="submit" value="Search" style=
+					"	height:70px;
+						width:150px;
+						background-color:#ff246c;
+						color:white;
+						font-size:18px;
+						margin:0px;
+						font-weight:400;
+						padding:9px 33px 9px 32px;
+						border:none;
+						border-radius:0px;">
+			</div>
+        </form>	
         <!-- Hero Area End -->
         <!-- Job List Area Start -->
         <div class="job-listing-area pt-120 pb-120">
@@ -114,7 +154,7 @@
                                         d="M7.778,12.000 L12.222,12.000 L12.222,10.000 L7.778,10.000 L7.778,12.000 ZM-0.000,-0.000 L-0.000,2.000 L20.000,2.000 L20.000,-0.000 L-0.000,-0.000 ZM3.333,7.000 L16.667,7.000 L16.667,5.000 L3.333,5.000 L3.333,7.000 Z"/>
                                     </svg>
                                     </div>
-                                    <h4>Filter Jobs</h4>
+                                    <h4>Filter Outfits</h4>
                                 </div>
                             </div>
                         </div>
@@ -123,143 +163,148 @@
                             <!-- single one -->
                             <div class="single-listing">
                                <div class="small-section-tittle2">
-                                     <h4>Job Category</h4>
+                                     <h4>Jenis Kelamin</h4>
                                </div>
                                 <!-- Select job items start -->
                                 <div class="select-job-items2">
                                     <select name="select">
-                                        <option value="">All Category</option>
-                                        <option value="">Category 1</option>
-                                        <option value="">Category 2</option>
-                                        <option value="">Category 3</option>
-                                        <option value="">Category 4</option>
+                                        <option value="">All</option>
+                                        <option value="">Laki-laki</option>
+                                        <option value="">Perempuan</option>
+                                        <option value="">Couple</option>
                                     </select>
                                 </div>
-                                <!--  Select job items End-->
-                                <!-- select-Categories start -->
-                                <div class="select-Categories pt-80 pb-50">
-                                    <div class="small-section-tittle2">
-                                        <h4>Job Type</h4>
-                                    </div>
-                                    <label class="container">Full Time
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Part Time
-                                        <input type="checkbox" checked="checked active">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Remote
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Freelance
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <!-- select-Categories End -->
-                            </div>
-                            <!-- single two -->
-                            <div class="single-listing">
-                               <div class="small-section-tittle2">
-                                     <h4>Job Location</h4>
-                               </div>
-                                <!-- Select job items start -->
-                                <div class="select-job-items2">
-                                    <select name="select">
-                                        <option value="">Anywhere</option>
-                                        <option value="">Category 1</option>
-                                        <option value="">Category 2</option>
-                                        <option value="">Category 3</option>
-                                        <option value="">Category 4</option>
-                                    </select>
-                                </div>
-                                <!--  Select job items End-->
-                                <!-- select-Categories start -->
-                                <div class="select-Categories pt-80 pb-50">
-                                    <div class="small-section-tittle2">
-                                        <h4>Experience</h4>
-                                    </div>
-                                    <label class="container">1-2 Years
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">2-3 Years
-                                        <input type="checkbox" checked="checked active">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">3-6 Years
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">6-more..
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <!-- select-Categories End -->
                             </div>
                             <!-- single three -->
-                            <div class="single-listing">
-                                <!-- select-Categories start -->
-                                <div class="select-Categories pb-50">
-                                    <div class="small-section-tittle2">
-                                        <h4>Posted Within</h4>
-                                    </div>
-                                    <label class="container">Any
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Today
-                                        <input type="checkbox" checked="checked active">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Last 2 days
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Last 3 days
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Last 5 days
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Last 10 days
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
+                        </div>
+						<div class="job-category-listing mb-50">
+							<div class="single-listing">
+									<!-- select-Categories start -->
+									<div class="small-section-tittle2">
+										 <h4>Atasan</h4>
+								   </div>
+									<div id="atasan" class="dropdown-check-list" tabindex="100" onclick="DropList('atasan')">
+									  <span class="anchor" style="
+										width:220px;
+										height:45px;
+										background:#fff;
+										border-radius:0px;
+										padding:11px 19px 11px 10px;
+										color:#616875;
+										line-height:20px;
+										border:1px solid #ededed
+									  ">Pilih Atasan</span>
+									  <ul class="items">
+										<li><input type="checkbox" />Kemeja </li>
+										<li><input type="checkbox" />Kaos</li>
+										<li><input type="checkbox" />Sweater </li>
+										<li><input type="checkbox" />Jaket </li>
+										<li><input type="checkbox" />Cardigan </li>
+										<li><input type="checkbox" />Gamis </li>
+										<li><input type="checkbox" />Dress</li>
+										<li><input type="checkbox" />Vest</li>
+										<li><input type="checkbox" />Overall</li>
+										<li><input type="checkbox" />Tunik</li>
+										<li><input type="checkbox" />Jas</li>
+										
+									  </ul>
+									</div>
                                 <!-- select-Categories End -->
                             </div>
-                            <div class="single-listing">
-                                <!-- Range Slider Start -->
-                                <aside class="left_widgets p_filter_widgets price_rangs_aside sidebar_box_shadow">
-                                    <div class="small-section-tittle2">
-                                        <h4>Filter Jobs</h4>
-                                    </div>
-                                    <div class="widgets_inner">
-                                        <div class="range_item">
-                                            <!-- <div id="slider-range"></div> -->
-                                            <input type="text" class="js-range-slider" value="" />
-                                            <div class="d-flex align-items-center">
-                                                <div class="price_text">
-                                                    <p>Price :</p>
-                                                </div>
-                                                <div class="price_value d-flex justify-content-center">
-                                                    <input type="text" class="js-input-from" id="amount" readonly />
-                                                    <span>to</span>
-                                                    <input type="text" class="js-input-to" id="amount" readonly />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </aside>
-                              <!-- Range Slider End -->
+						</div>
+						<div class="job-category-listing mb-50">
+							<div class="single-listing">
+									<!-- select-Categories start -->
+									<div class="small-section-tittle2">
+										 <h4>Bawahan</h4>
+								   </div>
+									<div id="bawahan" class="dropdown-check-list" tabindex="100" onclick="DropList('bawahan')">
+									  <span class="anchor" style="
+										width:220px;
+										height:45px;
+										background:#fff;
+										border-radius:0px;
+										padding:11px 19px 11px 10px;
+										color:#616875;
+										line-height:20px;
+										border:1px solid #ededed
+									  ">Pilih Bawahan</span>
+									  <ul class="items">
+										<li><input type="checkbox" />Jeans</li>
+										<li><input type="checkbox" />Rok</li>
+										<li><input type="checkbox" />Celana Pendek</li>
+										<li><input type="checkbox" />Celana Panjang</li>
+										<li><input type="checkbox" />Jogger</li>
+										<li><input type="checkbox" />Kulot</li>
+										<li><input type="checkbox" />Training</li>
+									  </ul>
+									</div>
+                                <!-- select-Categories End -->
                             </div>
-                        </div>
+						</div>
+						<div class="job-category-listing mb-50">
+							<div class="single-listing">
+									<!-- select-Categories start -->
+									<div class="small-section-tittle2">
+										 <h4>Aksesoris</h4>
+								   </div>
+									<div id="aksesoris" class="dropdown-check-list" tabindex="100" onclick="DropList('aksesoris')">
+									  <span class="anchor" style="
+										width:220px;
+										height:45px;
+										background:#fff;
+										border-radius:0px;
+										padding:11px 19px 11px 10px;
+										color:#616875;
+										line-height:20px;
+										border:1px solid #ededed
+									  ">Pilih Aksesoris</span>
+									  <ul class="items">
+										<li><input type="checkbox" />Topi</li>
+										<li><input type="checkbox" />Hijab</li>
+										<li><input type="checkbox" />Kacamata</li>
+										<li><input type="checkbox" />Sabuk</li>
+										<li><input type="checkbox" />Kalung</li>
+										<li><input type="checkbox" />Beanie</li>
+									  </ul>
+									</div>
+                                <!-- select-Categories End -->
+                            </div>
+						</div>
+						<div class="job-category-listing mb-50">
+							<div class="single-listing">
+									<!-- select-Categories start -->
+									<div class="small-section-tittle2">
+										 <h4>Warna</h4>
+								   </div>
+									<div id="warna" class="dropdown-check-list" tabindex="100" onclick="DropList('warna')">
+									  <span class="anchor" style="
+										width:220px;
+										height:45px;
+										background:#fff;
+										border-radius:0px;
+										padding:11px 19px 11px 10px;
+										color:#616875;
+										line-height:20px;
+										border:1px solid #ededed
+									  ">Pilih Warna</span>
+									  <ul class="items">
+										<li><input type="checkbox" />Hitam</li>
+										<li><input type="checkbox" />Putih</li>
+										<li><input type="checkbox" />Cokelat</li>
+										<li><input type="checkbox" />Abu-abu</li>
+										<li><input type="checkbox" />Hijau</li>
+										<li><input type="checkbox" />Kuning</li>
+										<li><input type="checkbox" />Biru</li>
+										<li><input type="checkbox" />Merah</li>
+										<li><input type="checkbox" />Ungu</li>
+										<li><input type="checkbox" />Pink</li>
+										<li><input type="checkbox" />Orange</li>
+									  </ul>
+									</div>
+                                <!-- select-Categories End -->
+                            </div>
+						</div>
                         <!-- Job Category Listing End -->
                     </div>
                     <!-- Right content -->
