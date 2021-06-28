@@ -1,0 +1,244 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="Doc/js/jsonRequest.js"></script>
+    <script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.load('current', {'packages':['bar']});
+
+      // Draw the chart of category
+      google.charts.setOnLoadCallback(drawGenderChart);
+      google.charts.setOnLoadCallback(drawColourChart);
+      google.charts.setOnLoadCallback(drawCategoryChart);
+
+      // Parsing json
+      var request = new XMLHttpRequest();
+      request.open("GET", "json/outfit_labeled.json", false);
+      request.send(null)
+      var obj = getJsonObject();
+
+      // Callback that draws the pie chart for gender
+      function drawGenderChart() {
+
+        // Count based on gender
+        var count = [0,0]; // indeks 0 : perempuan, indeks 1 laki-laki
+
+        // Chek every object in json
+        obj.forEach(function (object){
+          // Check every key [result] object in json
+          for(var i = 0; i < object.annotations[0].result.length; i++)
+          {
+            // Check every result with from_name = Jenis kelamin
+            if(object.annotations[0].result[i].from_name == "Jenis Kelamin")
+            {
+              // Check all gender in the picture
+              for(var j = 0; j < object.annotations[0].result[i].value.choices.length; j++)
+              {
+                // Count gender
+                if(object.annotations[0].result[i].value.choices[j] == "Perempuan")
+                  count[0]++;
+                else if (object.annotations[0].result[i].value.choices[j] == "Laki-laki")
+                  count[1]++;
+              }
+            }
+          }
+        })
+
+        // Create the data table for Gender
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Gender');
+        data.addColumn('number', 'Amount');
+        data.addRows([
+          ['Perempuan', count[0]],
+          ['Laki-laki', count[1]]
+        ]);
+
+        // Set options for Anthony's pie chart.
+        var options = { title:'How many outfit by gender',
+                        titlePosition : 'bottom',
+                        width:600,
+                        height:400,
+                        colors : ['#ff246c', '#e31746'],
+                        legend : {position : 'bottom'}
+                      };
+
+        // Instantiate and draw the chart for gender
+        var chart = new google.visualization.PieChart(document.getElementById('Gender_chart_div'));
+        chart.draw(data, options);
+      }
+
+      // Callback that draws the coloumn chart for colour category
+      function drawColourChart() {
+      
+      // variable for every color exist on the image 
+      var colourCategory ={}
+      
+      // Check every object in json
+      obj.forEach(function (object){
+        // check every object result (category)
+        for(var i = 0; i < object.annotations[0].result.length; i++)
+          {
+            // Check if result (category) is "warna"
+            if(object.annotations[0].result[i].from_name == "Warna")
+            {
+              // Check every colour the object have
+              for(var j = 0; j < object.annotations[0].result[i].value.choices.length; j++)
+              {
+                // Check if already exist in colour category
+                if(colourCategory[object.annotations[0].result[i].value.choices[j]] == undefined)
+                  colourCategory[object.annotations[0].result[i].value.choices[j]] = 1
+                else
+                  colourCategory[object.annotations[0].result[i].value.choices[j]]++;
+              }
+            }
+          }
+      })
+
+      // Data table for chart
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Colour');
+      data.addColumn('number', 'Amount');
+
+      // Option for chart
+      var options = {
+        width: 600,
+        height: 400,
+        legend: { position: 'none' },
+        colors : ['#ff246c'],
+        chart: {
+          title: 'Colour',
+          subtitle: 'Outfit based colour' },
+        bar: { groupWidth: "90%" },
+        animation : {
+          duration : 1000,
+          startup : true
+        }
+      };
+      
+      // Adding every colour in colourCategory as row
+      data.addRows(Object.entries(colourCategory))
+
+      // Chart variable
+      var chart = new google.charts.Bar(document.getElementById('colour_chart_div'));
+
+      // Convert the Classic options to Material options.
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+
+      // Callback that draws the coloumn chart for category
+      function drawCategoryChart() {
+
+      // Creating data table for category chart
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');
+      data.addColumn('number', 'Amount');
+      data.addRows(Object.entries(countCategory("Atasan")))
+
+      // Option for chart
+      var options = {
+        width: 600,
+        height: 400,
+        legend: { position: 'none' },
+        colors : ['#ff246c'],
+        chart: {
+          title: 'Category',
+          subtitle: 'Outfit based colour' },
+        bar: { groupWidth: "90%" },
+        animation : {
+          duration : 1000,
+          startup : true
+        }
+      };
+
+      // chart variable
+      var chart = new google.charts.Bar(document.getElementById('category_chart_div'));
+
+      // Print default chart : atasan
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+
+      // Access button from html
+      var atasanBtn = document.getElementById('atasan-btn')
+      var bawahanBtn = document.getElementById('bawahan-btn')
+      var aksesorisBtn = document.getElementById('aksesoris-btn')
+
+      // atasan button event : print kategori atasan chart
+      atasanBtn.onclick = function() {
+        clearRows()
+        data.addRows(Object.entries(countCategory("Atasan")))
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+        
+      }
+
+      // bawahan button event : print kategori bawahan chart
+      bawahanBtn.onclick = function() {
+        clearRows()
+        data.addRows(Object.entries(countCategory("Bawahan")))
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+
+      // bawahan button event : print kategori bawahan chart
+      aksesorisBtn.onclick = function() {
+        clearRows()
+        data.addRows(Object.entries(countCategory("Aksesoris")))
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+
+      // function to count category
+      function countCategory(name)
+      {
+        var temp = {}
+        // Check every object in json
+        obj.forEach(function (object){
+          // check every object result (category)
+          for(var i = 0; i < object.annotations[0].result.length; i++)
+            {
+              if(object.annotations[0].result[i].from_name != "Warna" && object.annotations[0].result[i].from_name != "Jenis Kelamin")
+              {
+                if(object.annotations[0].result[i].from_name == name)
+                {
+                  for(var j = 0; j < object.annotations[0].result[i].value.choices.length; j++)
+                  {
+                    // Check if already exist in colour category
+                    if(temp[object.annotations[0].result[i].value.choices[j]] == undefined)
+                      temp[object.annotations[0].result[i].value.choices[j]] = 1
+                    else
+                      temp[object.annotations[0].result[i].value.choices[j]]++;
+                  }
+                }
+              }
+            }
+            
+        })
+        return temp
+      }
+
+      // function to clear all rows in data table
+      function clearRows()
+      {
+        var len = data.getNumberOfRows()
+        
+        // Delete every row exist in data table
+        for(var i = 0; i < len; i++)
+          data.removeRow(0);
+      }
+};
+      
+    </script>
+  </head>
+  <body>
+    <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="category_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="Gender_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="colour_chart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table>
+    <button id='atasan-btn'>Atasan</button>
+    <button id='bawahan-btn'>Bawahan</button>
+    <button id='aksesoris-btn'>Aksesoris</button>
+  </body>
+</html>
+
