@@ -32,6 +32,15 @@
 .theme-color {
   color: #fb246a;
 }
+
+.grid-item {
+  margin-bottom: 10px;
+}
+
+.grid-item img {
+  border-radius: 20px;
+}
+
 .boxed-btn {
   background: #fff;
   color: #fb246a !important;
