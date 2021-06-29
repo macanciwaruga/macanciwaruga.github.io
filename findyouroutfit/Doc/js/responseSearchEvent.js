@@ -22,13 +22,14 @@ function showImages() {
         div_item.className = "grid-item"
         div_item.innerHTML = '<img src="assets/img/outfit/' + item.file_upload + '"/>'
         container.appendChild(div_item)
-        images.push(item.file_upload)
     }
 
     const grid = document.querySelector(".grid")
-    const mansonry = new Masonry(grid, {
-        itemSelector: '.grid-item', 
-        gutter: 20, 
+    imagesLoaded(grid, function(){
+        const mansonry = new Masonry(grid, {
+            itemSelector: '.grid-item', 
+            gutter: 20, 
+        })
     })
 
     document.getElementById("data-count").innerHTML = obj.length + " Data Found"
