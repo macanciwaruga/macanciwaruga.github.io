@@ -4943,6 +4943,7 @@ form.search-box {
   box-shadow: 0px 6px 29px 0px rgba(36, 43, 94, 0.08);
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 form.search-box .input-form {
