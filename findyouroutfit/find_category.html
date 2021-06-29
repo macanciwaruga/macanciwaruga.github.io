@@ -104,21 +104,20 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
         </div>
 		<form action="#" class="search-box" style="width:50%; margin:auto;">
             <div class="input-form-row">
-                <input type="text" placeholder="Outfit Keyword" style=
+                <input type="text" id="searchKeywordInput"placeholder="Outfit Keyword" style=
 					"	height:70px;
 						width:100%;
 						color:#777777;
 						font-size:18px;
 						font-weight:400;
 						padding:9px 33px 9px 32px;
-						border:none;
 						border-radius:0px;
 						margin:0px;
 						position:relative"
 						>
 		    </div>
 			<div class="input-form-row">
-				<input type="submit" value="Search" style=
+				<input type="button" id="searchButton" value="Search" style=
 					"	height:70px;
 						width:150px;
 						background-color:#ff246c;
@@ -644,7 +643,7 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
     </footer>
 
 	<!-- JS here -->
-	
+        <script src="./Doc/js/searchEvent.js"></script>
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 		<!-- Jquery, Popper, Bootstrap -->
@@ -678,6 +677,21 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
+
+        <script type="text/javascript">
+            window.onload = function() {
+                let url = document.location.href
+                console.info(url.split('?').length)
+                if(url.split('?').length > 1) {
+                    let params = url.split('?')[1].split('=')[1].split("%20")
+                    let param = "";
+                    for (let item of params) {
+                        param += item + " "
+                    }
+                    document.getElementById("searchKeywordInput").value = param
+                }
+            }
+        </script>
         
     </body>
 </html>

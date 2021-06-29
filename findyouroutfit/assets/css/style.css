@@ -4696,6 +4696,7 @@ del {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  cursor : pointer;
 }
 
 .chart-menu ul li a#atasan-btn {
@@ -4710,6 +4711,7 @@ del {
 
 .chart-menu ul li a:hover {
   color: #fb246a !important;
+  cursor: pointer;
 }
 
 .chart-menu a:active {
