@@ -6451,3 +6451,12 @@ form.search-box .search-form a {
   font-size: 13px;
   color: #fff;
 }
+
+.grid-container {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto;
+}
