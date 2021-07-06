@@ -44,6 +44,7 @@
 .grid-item:hover{
 	transform: scale(1.2);
 	position: absolute;
+	z-index: 1;
 }
 
 .boxed-btn {
