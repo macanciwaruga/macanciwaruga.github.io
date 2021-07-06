@@ -4678,11 +4678,13 @@ del {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: inline-block;
 }
 
 .header-area .main-menu ul li {
   display: inline-block;
   position: relative;
+  margin: auto;
   z-index: 1;
 }
 .header-area .main-menu ul li a {
