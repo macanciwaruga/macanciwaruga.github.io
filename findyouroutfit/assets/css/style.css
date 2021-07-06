@@ -6460,3 +6460,18 @@ form.search-box .search-form a {
   grid-row-gap: 50px;
   grid-template-columns: auto auto auto;
 }
+
+.img-holder{
+	margin: auto;
+	display: block;
+	background-size: cover;
+	transition: 0.3s ease-in-out;
+	object-fit: cover;
+}
+.img-holder a {
+	display: block;
+	transition: 0.3s ease-in-out;
+}
+.img-holder:hover{
+	transform: scale(1.2);
+}
