@@ -45,6 +45,7 @@ filterButton.onclick = function() {
     }
 
     applyFilter(jkItemSelected, atasanFilter, bawahanFilter, aksesorisFilter, warnaFilter)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 /**
