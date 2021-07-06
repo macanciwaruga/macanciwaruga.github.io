@@ -105,7 +105,7 @@ function showImages(params) {
     let filteredResult = []
 
     if( jk == "All" && filterAtasan.length == 0 && filterAksesoris.length == 0 && filterBawahan.length == 0 && filterWarna.length == 0) {
-        showImages([])
+        showImages(activeData)
     }
 
     for(item of activeData) {
