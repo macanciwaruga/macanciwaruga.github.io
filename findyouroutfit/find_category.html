@@ -162,11 +162,10 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
                                </div>
                                 <!-- Select job items start -->
                                 <div class="select-job-items2">
-                                    <select name="select">
-                                        <option value="">All</option>
-                                        <option value="">Laki-laki</option>
-                                        <option value="">Perempuan</option>
-                                        <option value="">Couple</option>
+                                    <select name="select" id="jkSelect">
+                                        <option value="1">All</option>
+                                        <option value="2">Laki-laki</option>
+                                        <option value="3">Perempuan</option>
                                     </select>
                                 </div>
                             </div>
@@ -190,17 +189,17 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
 										border:1px solid #ededed
 									  ">Pilih Atasan</span>
 									  <ul class="items">
-										<li><input type="checkbox"/>Kemeja </li>
-										<li><input type="checkbox" />Kaos</li>
-										<li><input type="checkbox" />Sweater </li>
-										<li><input type="checkbox" />Jaket </li>
-										<li><input type="checkbox" />Cardigan </li>
-										<li><input type="checkbox" />Gamis </li>
-										<li><input type="checkbox" />Dress</li>
-										<li><input type="checkbox" />Vest</li>
-										<li><input type="checkbox" />Overall</li>
-										<li><input type="checkbox" />Tunik</li>
-										<li><input type="checkbox" />Jas</li>
+										<li><input type="checkbox" value="kemeja" name="atasan[]"/>Kemeja </li>
+										<li><input type="checkbox" value="kaos" name="atasan[]"/>Kaos</li>
+										<li><input type="checkbox" value="sweater" name="atasan[]"/>Sweater </li>
+										<li><input type="checkbox" value="jaket" name="atasan[]"/>Jaket </li>
+										<li><input type="checkbox" value="cardigan" name="atasan[]"/>Cardigan </li>
+										<li><input type="checkbox" value="gamis" name="atasan[]"/>Gamis </li>
+										<li><input type="checkbox" value="dress" name="atasan[]"/>Dress</li>
+										<li><input type="checkbox" value="vest" name="atasan[]"/>Vest</li>
+										<li><input type="checkbox" value="overall" name="atasan[]"/>Overall</li>
+										<li><input type="checkbox" value="tunik" name="atasan[]"/>Tunik</li>
+										<li><input type="checkbox" value="jas" name="atasan[]"/>Jas</li>
 										
 									  </ul>
 									</div>
@@ -225,13 +224,13 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
 										border:1px solid #ededed
 									  ">Pilih Bawahan</span>
 									  <ul class="items">
-										<li><input type="checkbox" />Jeans</li>
-										<li><input type="checkbox" />Rok</li>
-										<li><input type="checkbox" />Celana Pendek</li>
-										<li><input type="checkbox" />Celana Panjang</li>
-										<li><input type="checkbox" />Jogger</li>
-										<li><input type="checkbox" />Kulot</li>
-										<li><input type="checkbox" />Training</li>
+										<li><input type="checkbox" value="jeans" name="bawahan[]"/>Jeans</li>
+										<li><input type="checkbox" value="rok" name="bawahan[]"/>Rok</li>
+										<li><input type="checkbox" value="celana pendek"name="bawahan[]"/>Celana Pendek</li>
+										<li><input type="checkbox" value="celana panjang"name="bawahan[]"/>Celana Panjang</li>
+										<li><input type="checkbox" value="jogger" name="bawahan[]"/>Jogger</li>
+										<li><input type="checkbox" value="kulot" name="bawahan[]"/>Kulot</li>
+										<li><input type="checkbox" value="training" name="bawahan[]"/>Training</li>
 									  </ul>
 									</div>
                                 <!-- select-Categories End -->
@@ -255,12 +254,12 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
 										border:1px solid #ededed
 									  ">Pilih Aksesoris</span>
 									  <ul class="items">
-										<li><input type="checkbox" />Topi</li>
-										<li><input type="checkbox" />Hijab</li>
-										<li><input type="checkbox" />Kacamata</li>
-										<li><input type="checkbox" />Sabuk</li>
-										<li><input type="checkbox" />Kalung</li>
-										<li><input type="checkbox" />Beanie</li>
+										<li><input type="checkbox" value="topi" name="aksesoris[]"/>Topi</li>
+										<li><input type="checkbox" value="hijab" name="aksesoris[]"/>Hijab</li>
+										<li><input type="checkbox" value="kacamata" name="aksesoris[]"/>Kacamata</li>
+										<li><input type="checkbox" value="sabuk" name="aksesoris[]"/>Sabuk</li>
+										<li><input type="checkbox" value="kalung" name="aksesoris[]"/>Kalung</li>
+										<li><input type="checkbox" value="beanie" name="aksesoris[]"/>Beanie</li>
 									  </ul>
 									</div>
                                 <!-- select-Categories End -->
@@ -284,22 +283,33 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
 										border:1px solid #ededed
 									  ">Pilih Warna</span>
 									  <ul class="items">
-										<li><input type="checkbox" />Hitam</li>
-										<li><input type="checkbox" />Putih</li>
-										<li><input type="checkbox" />Cokelat</li>
-										<li><input type="checkbox" />Abu-abu</li>
-										<li><input type="checkbox" />Hijau</li>
-										<li><input type="checkbox" />Kuning</li>
-										<li><input type="checkbox" />Biru</li>
-										<li><input type="checkbox" />Merah</li>
-										<li><input type="checkbox" />Ungu</li>
-										<li><input type="checkbox" />Pink</li>
-										<li><input type="checkbox" />Orange</li>
+										<li><input type="checkbox" value="hitam" name="warna[]"/>Hitam</li>
+										<li><input type="checkbox" value="putih" name="warna[]"/>Putih</li>
+										<li><input type="checkbox" value="cokelat" name="warna[]"/>Cokelat</li>
+										<li><input type="checkbox" value="abu-abu"name="warna[]"/>Abu-abu</li>
+										<li><input type="checkbox" value="hijau" name="warna[]"/>Hijau</li>
+										<li><input type="checkbox" value="kuning" name="warna[]"/>Kuning</li>
+										<li><input type="checkbox" value="biru" name="warna[]"/>Biru</li>
+										<li><input type="checkbox" value="merah" name="warna[]"/>Merah</li>
+										<li><input type="checkbox" value="ungu" name="warna[]"/>Ungu</li>
+										<li><input type="checkbox" value="pink" name="warna[]"/>Pink</li>
+										<li><input type="checkbox" value="orange" name="warna"/>Orange</li>
 									  </ul>
 									</div>
                                 <!-- select-Categories End -->
                             </div>
 						</div>
+                        <input type="button" id="filterButton" value="Apply Filter" style=
+					        "height:70px;
+						    width:100%;
+						    background-color:#ff246c;
+						    color:white;
+						    font-size:18px;
+						    margin:0px;
+						    font-weight:400;
+						    padding:9px 33px 9px 32px;
+						    border:none;
+						    border-radius:0px;">
                         <!-- Job Category Listing End -->
                     </div>
                     <!-- Right content -->
@@ -312,17 +322,6 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
                                     <div class="col-lg-12">
                                         <div class="count-job mb-35">
                                             <span id="data-count">39, 782 Jobs found</span>
-                                            <!-- Select job items start -->
-                                            <div class="select-job-items">
-                                                <span>Sort by</span>
-                                                <select name="select">
-                                                    <option value="">None</option>
-                                                    <option value="">job list</option>
-                                                    <option value="">job list</option>
-                                                    <option value="">job list</option>
-                                                </select>
-                                            </div>
-                                            <!--  Select job items End-->
                                         </div>
                                     </div>
                                 </div>
@@ -369,10 +368,10 @@ checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
           &copy; Copyright <strong><span>2021</span></strong>. All Rights Reserved.
         Designed by <a href="https://macanciwaruga.github.io/" style="color: ">MacanCiwaruga</a>
-     <a href="https://macanciwaruga.github.io/" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      </div>
+        <a href="https://macanciwaruga.github.io/" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        </div>
     </div>
-  </footer><!-- End Footer -->
+    </footer><!-- End Footer -->
 
 	<!-- JS here -->
         <script src="./Doc/js/searchEvent.js"></script>
