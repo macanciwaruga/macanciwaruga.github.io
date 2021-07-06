@@ -42,7 +42,8 @@
   border-radius: 20px;
 }
 .grid-item:hover{
-	transform: scale(1.5);
+	transform: scale(1.2);
+	position: absolute;
 }
 
 .boxed-btn {
