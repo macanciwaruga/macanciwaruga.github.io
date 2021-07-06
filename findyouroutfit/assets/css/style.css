@@ -35,10 +35,14 @@
 
 .grid-item {
   margin-bottom: 10px;
+  transition: transform .2s;
 }
 
 .grid-item img {
   border-radius: 20px;
+}
+.grid-item:hover{
+	transform: scale(1.5);
 }
 
 .boxed-btn {
