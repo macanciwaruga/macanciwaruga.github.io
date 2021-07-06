@@ -73,6 +73,7 @@ function showImages(params) {
 
     if(images.length == 0) {
         images = getJsonObject()
+        console.table(images)
         activeData = images
     }
 
