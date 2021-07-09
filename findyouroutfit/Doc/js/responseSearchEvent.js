@@ -73,8 +73,8 @@ function showImages(params) {
 
     if(images.length == 0) {
         images = getJsonObject()
-        console.table(images)
         activeData = images
+        console.table(images)
     }
 
     for (let item of images) {
